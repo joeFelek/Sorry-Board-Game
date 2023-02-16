@@ -73,7 +73,7 @@ which resolution you want to play (you'll have a choice between 1366x768 and 192
 
 Then you can start the game. 
 
-![](Readme Pictures/startSorry.png)
+![](readme_pics/startSorry.png)
 
 This is the main game screen where you can draw cards and move your pawns based on the current card's effects.
 To move a pawn you just need to drag and drop it, if you drop on a correct square the pawn will stay there and the turn will pass
@@ -81,7 +81,7 @@ to the next player. If not then the pawn will return to its original position. Y
 Once a player has both of his pawns in the Home square the player will be victorious and the game will end. To start a new game you may do so by 
 clicking it from the menu, in the top left corner or using the shortcut.
 
-![](Readme Pictures/endSorry.png)
+![](readme_pics/endSorry.png)
 
 ### Features
 
