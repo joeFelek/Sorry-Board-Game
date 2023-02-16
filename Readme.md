@@ -69,7 +69,7 @@ UML diagrams of each controller and class in the UML diagrams folder.
 The first thing you'll see is the login screen where you can input the players names and choose in
 which resolution you want to play (you'll have a choice between 1366x768 and 1920x1080). 
 
-![](Readme Pictures/loginSorry.png)
+![](readme_pics/loginSorry.png)
 
 Then you can start the game. 
 
