@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" styleClass="background" stylesheets="@../resources/css/background.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.view.View">
+   <AnchorPane layoutY="26.0" minHeight="742.0" minWidth="1366.0" prefHeight="743.0" prefWidth="1366.0" styleClass="background" stylesheets="@../resources/css/background.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+      <Pane fx:id="boardPane" layoutX="441.0" layoutY="-66.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="776.0" prefWidth="773.0" AnchorPane.rightAnchor="152.0">
+         <ImageView fitHeight="117.0" fitWidth="378.0" layoutX="214.0" layoutY="337.0" opacity="0.26" pickOnBounds="true" preserveRatio="true" rotate="-40.6">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" height="35.82" radius="23.3425" spread="0.16" width="59.55" />
+            </effect>
+            <Image url="@../resources/sorryImage.png" />
+         </ImageView>
+         <Group fx:id="RectangleGroup" layoutX="25.0" layoutY="74.0">
+            <Rectangle fx:id="SimpleSquare1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallRedSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="47.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallRedSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallRedSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="141.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallRedSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="188.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="235.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare3" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="282.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare4" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="329.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare5" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="376.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigRedSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="423.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigRedSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="470.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigRedSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="517.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigRedSlideMedium2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="564.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigRedSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare6" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="658.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare7" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallBlueSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallBlueSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="84.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallBlueSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="126.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallBlueSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="168.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare8" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="210.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare9" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="252.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare10" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="294.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare11" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="336.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigBlueSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="378.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigBlueSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="420.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigBlueSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="462.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigBlueSlideMedium2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="504.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigBlueSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="546.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare12" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="588.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare13" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="705.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallYellowSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="658.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallYellowSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallYellowSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="564.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallYellowSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="517.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare14" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="470.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare15" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="423.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare16" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="376.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare17" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="329.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigYellowSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="282.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigYellowSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="235.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigYellowSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="188.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigYellowSlideMedium2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="141.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigYellowSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare18" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="47.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare19" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="630.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallGreenSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="588.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallGreenSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="546.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallGreenSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="504.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="smallGreenSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="462.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare20" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="420.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare21" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="378.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare22" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="336.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare23" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="294.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigGreenSlideStart" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="252.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigGreenSlideMedium" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="210.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigGreenSlideMedium1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="168.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigGreenSlideMedium2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="126.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="bigGreenSlideEnd" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="84.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="SimpleSquare24" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0" />
+            <Rectangle fx:id="redHome1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="115.0" layoutY="258.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="redHome2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="75.0" layoutY="258.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="yellowHome1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="591.0" layoutY="364.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="yellowHome2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="630.0" layoutY="364.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="redStart1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="170.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="redStart2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="211.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="yellowStart1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="495.0" layoutY="578.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="yellowStart2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="537.0" layoutY="578.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" width="40.0" />
+            <Rectangle fx:id="redSafetyZone1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redSafetyZone2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="84.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redSafetyZone3" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="126.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redSafetyZone4" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="168.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redSafetyZone5" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="94.0" layoutY="210.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowSafetyZone1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="587.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowSafetyZone2" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="544.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowSafetyZone3" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="501.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowSafetyZone4" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="458.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowSafetyZone5" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="35.0" layoutX="611.0" layoutY="415.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="40.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redStartSquare" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="70.0" layoutX="171.0" layoutY="42.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="4.0" width="80.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowStartSquare" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="70.0" layoutX="497.0" layoutY="552.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="4.0" width="80.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="18.03" radius="7.775" width="15.07" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="redHomeSquare" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="70.0" layoutX="74.0" layoutY="254.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="4.0" width="80.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="RED" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="yellowHomeSquare" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="70.0" layoutX="591.0" layoutY="336.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="4.0" width="80.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.64" color="#ffee00" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+         </Group>
+         <AnchorPane layoutX="95.0" layoutY="509.0" prefHeight="162.0" prefWidth="163.0">
+            <ImageView fitHeight="197.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Bloom threshold="0.85">
+                     <input>
+                        <DropShadow height="26.935" radius="12.22625" spread="0.37" width="23.97" />
+                     </input>
+                  </Bloom>
+               </effect>
+               <Image url="@../resources/Paul-01-512.png" />
+            </ImageView>
+            <Label fx:id="redPlayerLabel" layoutX="4.0" layoutY="22.0" text="PLAYER 1 " textFill="RED" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow color="RED" />
+               </effect>
+            </Label>
+            <Label fx:id="yellowPlayerLabel" layoutX="124.0" layoutY="178.0" text="PLAYER 2" textFill="#fffb00" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fffb00" />
+               </effect>
+            </Label>
+         </AnchorPane>
+         <Label layoutX="215.0" layoutY="168.0" text="START">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="540.0" layoutY="629.0" text="START">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="119.0" layoutY="380.0" text="HOME">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="634.0" layoutY="412.0" text="HOME">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Circle fx:id="origPositionCircle" fill="RED" layoutX="217.0" layoutY="136.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+         <Circle fx:id="yellowPawn1" fill="YELLOW" layoutX="540.0" layoutY="672.0" radius="14.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" />
+            </effect></Circle>
+         <Circle fx:id="yellowPawn2" fill="YELLOW" layoutX="583.0" layoutY="672.0" radius="14.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" />
+            </effect></Circle>
+         <Circle fx:id="redPawn1" fill="RED" layoutX="217.0" layoutY="136.0" radius="14.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" />
+            </effect></Circle>
+         <Circle fx:id="redPawn2" fill="RED" layoutX="256.0" layoutY="136.0" radius="14.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" />
+            </effect></Circle>
+      </Pane>
+      <Pane layoutX="22.0" layoutY="22.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="441.0" AnchorPane.rightAnchor="903.0" AnchorPane.topAnchor="0.0">
+         <Button fx:id="drawButton" alignment="CENTER" layoutX="21.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#DrawCard" prefHeight="289.0" prefWidth="189.0" styleClass="cardBack" stylesheets="@../resources/css/CardImage.css">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+               <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" color="#171615">
+                  <input>
+                     <DropShadow height="41.94499999999999" radius="20.426249999999996" spread="0.58" width="41.76" />
+                  </input>
+               </InnerShadow>
+            </effect>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </Button>
+         <Label layoutX="69.0" layoutY="42.0" text="DRAW CARD" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Label>
+         <ImageView fx:id="CurrentCard" fitHeight="290.0" fitWidth="189.0" layoutX="227.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+               <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" color="#171615">
+                  <input>
+                     <DropShadow height="41.76" radius="20.38" spread="0.58" width="41.76" />
+                  </input>
+               </InnerShadow>
+            </effect>
+         </ImageView>
+         <Label layoutX="255.0" layoutY="41.0" text="CURRENT CARD" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Label>
+         <Button fx:id="foldButton" layoutX="150.0" layoutY="411.0" mnemonicParsing="false" onAction="#FoldAction" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: green;" text="FOLD">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Button>
+         <TextArea fx:id="InfoBox" editable="false" layoutX="10.0" layoutY="470.0" prefHeight="50.0" prefWidth="418.0" text="Turn: ">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+            <effect>
+               <InnerShadow choke="0.67" height="18.03" radius="8.515" width="18.03" />
+            </effect>
+         </TextArea>
+         <TextArea fx:id="GameLog" editable="false" layoutX="10.0" layoutY="527.0" prefHeight="131.0" prefWidth="418.0" text="Game Start!">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+            <effect>
+               <InnerShadow choke="0.67" height="18.03" radius="8.515" width="18.03" />
+            </effect>
+         </TextArea>
+      </Pane>
+   </AnchorPane>
+   <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Menu mnemonicParsing="false" text="New">
+         <accelerator>
+            <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+         </accelerator>
+         <MenuItem mnemonicParsing="false" onAction="#NewGame" text="New Game">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator>
+         </MenuItem>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Save" />
+      <Menu mnemonicParsing="false" text="Load" />
+      <Menu mnemonicParsing="false" text="Exit">
+         <MenuItem mnemonicParsing="false" onAction="#ExitGame" text="Exit Game">
+            <accelerator>
+               <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator>
+         </MenuItem>
+      </Menu>
+   </MenuBar>
+   <Label fx:id="victory" alignment="CENTER" layoutX="633.0" layoutY="300.0" prefHeight="102.0" prefWidth="461.0" text="PLAYER 1 WON" textFill="RED" visible="false" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="300.0">
+      <font>
+         <Font name="Arial Black" size="32.0" />
+      </font>
+      <effect>
+         <DropShadow height="29.89" radius="13.705" spread="0.38" width="26.93" />
+      </effect>
+   </Label>
+</AnchorPane>

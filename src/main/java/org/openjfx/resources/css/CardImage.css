@@ -1,0 +1,6 @@
+.cardBack {
+    -fx-background-image: url("../cards/backCard.png");
+    -fx-background-size: 219px , 342px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
